@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Node on Ubuntu!"
+excerpt: "Ever want to create your own webserver or API? Node.js is a runtime that allows for a super quick way to deploy servers using javascript, and it's simple to get started." 
 ---
-Ever want to create your own webserver or API? Node.js is a runtime that allows for a super quick way to deploy servers using javascript, and it's simple to get started. 
 
 For this tutorial we're going to be working with Ubuntu, if you're on Mac or Windows the installation process will be a little different but everything else should be pretty similar.
 
