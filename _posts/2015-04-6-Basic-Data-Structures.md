@@ -1,5 +1,5 @@
 ---
-title: Let's talk about BIG-O
+title: "Let's talk about BIG-O"
 ---
 
 Ever hear anyone mention Big-O notation, or the complexity of certain alogorithems or programs? No idea what they're talking about? In this tutorial we'll talk all about how we understand complexity in programs and more!
