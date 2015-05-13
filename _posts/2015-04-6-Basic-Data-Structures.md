@@ -52,6 +52,8 @@ So now lets take a look at some Java code examples of the above order of magnitu
 
 If we have an insertion algorithm for a linked list what would the order of magnitude be?
 
+![LinkedList](http://www.java2novice.com/images/linked_list.png)
+
 {% highlight java%}
 public void insert(LinkedList L, int input) {
     LinkedList newNode = new LinkedList(input);
@@ -78,6 +80,8 @@ Since we loop for every ``n`` elements in the array, our magnitude would always 
 ### O(log n)
 
 For **O(log n)** lets use an example invloving binary trees. One of the aspects that makes these Data Structures useful and unqiue is traversal at worst possible case takes **O(log n)**. This is stricly because of its structure. Lets take a look.
+
+![BinaryTree](http://he-s3.s3-website-ap-southeast-1.amazonaws.com/static/images/Questions/BinaryTree.png)
 
 > If you did not know already Binary tree structures consist of Nodes. Each node has two children, that are also nodes. In our case we will store integers in our nodes. Lastly we will store the nodes by using an algorithm that puts numbers less than the node we compare it to, to the left, and numbers greater than to the right child of the node we are on.
 
@@ -112,9 +116,25 @@ public boolean searchBinaryTree( int input ){
 }
 {% endhighlight %}
 
+This algorithm takes, in a worse case scenario, **O(log n)** time. Thats because of the structure of Binary Trees. The relationship between the number of elements to levels of the tree is **log(n)**. So since we only need to traverse through at least one node per level, it will take us at most **log(n)** number of traversals.
+
 ### O(n log n)
 
 ### O(n^2)
 
+Let's imagine an algorithm that check to see if two arrays are identical. It does this by for every element in array1 it loops through the entirty of array2. So it would look something like this.
 
-
+{% highlight java %}
+int array1[] = {1,2,3,4};
+int array2[] = {1,2,3,5};
+boolean answer = true;
+int i = 0; //counter 1
+int j = 0; //counter 2
+while( i < array1.length && answer == true) {
+    while( j < array2.length) {
+        if(array1[i] != array2[j]) {
+            answer = false;
+        }
+    }
+}
+{% endhighlight %}
